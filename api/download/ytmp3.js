@@ -8,14 +8,14 @@ export default async function handler(req, res) {
     const { url } = req.query;
     if (!url) {
         return res.status(400).json({
-          error: 'URL IG diperlukan',
+          error: 'URL YouTube diperlukan',
           creator: "Kenz Market",
           status: "400"
         });
     }
 
     try {
-        const apiUrl = `https://snapinsta.io/api/ajaxSearch`;
+        const apiUrl = `https://www.y2mate.com/mates/en68/analyze/ajax`;
         const response = await fetch(apiUrl, {
             method: 'POST',
             headers: {
@@ -25,13 +25,17 @@ export default async function handler(req, res) {
         });
 
         const data = await response.json();
-        if (!data || !data.medias) {
-            return res.status(500).json({ error: 'Gagal mengambil media dari Instagram' });
+        if (!data || !data.links || !data.links.mp3) {
+            return res.status(500).json({ error: 'Gagal mengambil audio dari YouTube' });
         }
+
+        const audioData = Object.values(data.links.mp3)[0]; // Ambil kualitas audio terbaik
 
         res.status(200).json({
             status: 'success',
-            data: data.medias
+            title: data.title,
+            thumbnail: data.thumbnail,
+            audio: audioData.url
         });
     } catch (error) {
         res.status(500).json({ error: 'Terjadi kesalahan saat mengambil data' });
