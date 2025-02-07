@@ -1,0 +1,16 @@
+{
+  "name": "myapi",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "ytdl-core": "^4.11.5"
+  }
+}
