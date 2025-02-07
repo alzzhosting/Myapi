@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation - Kenz Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KENZ MARKET API</h1>
+        <input type="text" placeholder="Search..." id="search">
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <main>
+        <h2>API Endpoints</h2>
+        <h5>API Download</h5>
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="title">Download YouTube Video</span>
+            <div class="actions">
+                <button class="copy-btn" data-url="https://apirest.kenzcode.biz.id/api/download/ytdl?url=">Copy URL</button>
+                <button class="try-btn" onclick="apiytdl()">Try it</button>
+            </div>
+        </div>
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="title">Download Tiktok Download</span>
+            <div class="actions">
+                <button class="copy-btn" data-url="https://apirest.kenzcode.biz.id/api/download/ttdl?url=">Copy URL</button>
+                <button class="try-btn" onclick="apittdl()">Try it</button>
+            </div>
+        </div>
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="title">Download YouTube MP3</span>
+            <div class="actions">
+                <button class="copy-btn" data-url="https://apirest.kenzcode.biz.id/api/download/ytmp3?url=">Copy URL</button>
+                <button class="try-btn" onclick="apiytmp3()">Try it</button>
+            </div>
+        </div>
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="title">Download Instagram</span>
+            <div class="actions">
+                <button class="copy-btn" data-url="https://apirest.kenzcode.biz.id/api/download/igdl?url=">Copy URL</button>
+                <button class="try-btn" onclick="apiigdl()">Try it</button>
+            </div>
+        </div>
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="title">Download Spotify</span>
+            <div class="actions">
+                <button class="copy-btn" data-url="https://apirest.kenzcode.biz.id/api/download/spotify?q=">Copy URL</button>
+                <button class="try-btn" onclick="apispo()">Try it</button>
+            </div>
+        </div>
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="title">Download SnackVideo</span>
+            <div class="actions">
+                <button class="copy-btn" data-url="https://apirest.kenzcode.biz.id/api/download/svideo?url=">Copy URL</button>
+                <button class="try-btn" onclick="apisvideo()">Try it</button>
+            </div>
+        </div>
+        <h5>API AI</h5>
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="title">AI LUMINAI</span>
+            <div class="actions">
+                <button class="copy-btn" data-url="https://apirest.kenzcode.biz.id/api/ai/lumin?q=">Copy URL</button>
+                <button class="try-btn" onclick="apiai()">Try it</button>
+            </div>
+        </div>
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="title">AI DEEPSEEK</span>
+            <div class="actions">
+                <button class="copy-btn" data-url="https://apirest.kenzcode.biz.id/api/ai/depsek?q=">Copy URL</button>
+                <button class="try-btn" onclick="apidepsek()">Try it</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 kenzDev API</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
