@@ -1,9 +1,9 @@
 {
   "name": "myapi",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "index.html"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
