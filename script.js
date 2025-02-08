@@ -17,26 +17,26 @@ document.querySelectorAll(".copy-btn").forEach(btn => {
 });
 
 function apiytdl(){
-  window.location.href=""
+  window.location.href="https://apirest.kenzcode.biz.id/api/download/ytdl?url="
 }
 function apittdl(){
-  window.location.href=""
+  window.location.href="https://apirest.kenzcode.biz.id/api/download/ttdl?url="
 }
 function apiai(){
-  window.location.href=""
+  window.location.href="https://apirest.kenzcode.biz.id/api/ai/lumin?q="
 }
 function apiytmp3(){
-  window.location.href=""
+  window.location.href="https://apirest.kenzcode.biz.id/api/download/ytmp3?url="
 }
 function apispo(){
-  window.location.href=""
+  window.location.href="https://apirest.kenzcode.biz.id/api/download/spo?url="
 }
 function apiigdl(){
-  window.location.href=""
+  window.location.href="https://apirest.kenzcode.biz.id/api/download/igdl?url="
 }
 function apisvideo(){
-  window.location.href=""
+  window.location.href="https://apirest.kenzcode.biz.id/api/download/svideo?url="
 }
 function apidepsek(){
-  window.location.href=""
+  window.location.href="https://apirest.kenzcode.biz.id/api/ai/depsek?q="
 }
